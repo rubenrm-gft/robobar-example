@@ -10,13 +10,13 @@ pipeline {
                 }
 
             }
-        }
-        post{
-            always{
-                junit 'results/*.xml'
+            post{
+                always{
+                    junit 'results/*.xml'
+                }
             }
         }
-
+      
 
 
     }
